@@ -1,6 +1,6 @@
 {
   "name": "use-media",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "useMedia React hook",
   "main": "lib/index.js",
   "files": [
