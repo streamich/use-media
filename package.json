@@ -23,7 +23,6 @@
   },
   "homepage": "https://github.com/streamich/use-media#readme",
   "dependencies": {
-    "react-use": "^4.8.0"
   },
   "devDependencies": {
     "semantic-release": "^15.10.6",
