@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-const {useState, useEffect} = React as any;
+const { useState, useEffect } = React;
 
 export const useMedia = (query: string, defaultState: boolean = false) => {
   const [state, setState] = useState(defaultState);
