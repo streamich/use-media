@@ -9,7 +9,10 @@
 import {useMedia} from 'use-media';
 
 const Demo = () => {
-  const isWide = useMedia('(min-width: 1000px)');
+  // Accepts an object of features to test
+  const isWide = useMedia({ minWidth: 1000 });
+  // Or a regular media query string
+  const reduceMotion = useMedia('(prefers-reduced-motion: reduce)');
 
   return (
     <div>
