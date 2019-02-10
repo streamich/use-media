@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/streamich/use-media/compare/v1.0.0...v1.1.0) (2019-02-10)
+
+
+### Features
+
+* add default export ([4849348](https://github.com/streamich/use-media/commit/4849348))
+
 # 1.0.0 (2019-02-09)
 
 
