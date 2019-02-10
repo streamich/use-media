@@ -48,3 +48,5 @@ export const useMedia = (
 
   return state;
 };
+
+export default useMedia;
