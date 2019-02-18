@@ -14,12 +14,13 @@
     "noImplicitReturns": true,
     "noImplicitAny": false,
     "noFallthroughCasesInSwitch": true,
-    "outDir": "lib",
+    "outDir": "esm",
     "lib": ["es2018", "dom"]
   },
   "exclude": [
     "node_modules",
-    "lib",
+    "esm",
+    "cjs",
     "**/__tests__/**/*",
     "**/__stories__/**/*",
     "*.test.ts",

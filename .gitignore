@@ -62,6 +62,8 @@ typings/
 
 # build output
 lib/
+esm/
+cjs/
 
 .DS_Store
 

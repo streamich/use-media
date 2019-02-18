@@ -1,6 +1,4 @@
-import * as React from 'react';
-
-const { useState, useEffect } = React;
+import { useEffect, useState } from 'react';
 
 type MediaQueryObject = { [key: string]: string | number | boolean };
 
