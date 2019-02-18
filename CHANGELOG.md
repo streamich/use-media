@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/streamich/use-media/compare/v1.1.0...v1.2.0) (2019-02-18)
+
+
+### Features
+
+* transpile down to ES5 ([c389ab8](https://github.com/streamich/use-media/commit/c389ab8))
+
 # [1.1.0](https://github.com/streamich/use-media/compare/v1.0.0...v1.1.0) (2019-02-10)
 
 
