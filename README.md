@@ -6,7 +6,7 @@
 ## Usage
 
 ```jsx
-import {useMedia} from 'use-media';
+import useMedia from 'use-media';
 
 const Demo = () => {
   // Accepts an object of features to test
@@ -20,4 +20,10 @@ const Demo = () => {
     </div>
   );
 };
+```
+
+The default module bundle is compiled for modern browsers. If you need to support IE11 and other browsers without support for arrow functions, template literals, etc, you can use the CommonJS bundle:
+
+```
+import useMedia from 'use-media/cjs`;
 ```
