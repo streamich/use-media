@@ -1,6 +1,7 @@
+import { DependencyList, EffectCallback } from 'react';
 import * as React from 'react';
 
-const { useState, useEffect } = React;
+const { useState, useEffect, useLayoutEffect } = React;
 
 type MediaQueryObject = { [key: string]: string | number | boolean };
 
@@ -23,13 +24,14 @@ const objectToString = (query: string | MediaQueryObject) => {
     .join(' and ');
 };
 
-export const useMedia = (
+type Effect = (effect: EffectCallback, deps?: DependencyList) => void;
+const createUseMedia = (effect: Effect) => (
   rawQuery: string | MediaQueryObject,
   defaultState: boolean = false
 ) => {
   const [state, setState] = useState(defaultState);
   const query = objectToString(rawQuery);
-  useEffect(() => {
+  effect(() => {
     let mounted = true;
     const mql = window.matchMedia(query);
     const onChange = () => {
@@ -48,5 +50,9 @@ export const useMedia = (
 
   return state;
 };
+
+
+export const useMedia = createUseMedia(useEffect);
+export const useMediaLayout = createUseMedia(useLayoutEffect);
 
 export default useMedia;
