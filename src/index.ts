@@ -25,7 +25,7 @@ const objectToString = (query: string | MediaQueryObject) => {
 };
 
 type Effect = (effect: EffectCallback, deps?: DependencyList) => void;
-const createUseMedia = (effect: Effect) =>  (
+const createUseMedia = (effect: Effect) => (
   rawQuery: string | MediaQueryObject,
   defaultState: boolean = false
 ) => {
