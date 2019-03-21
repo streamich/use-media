@@ -4069,13 +4069,13 @@ read-pkg-up@^3.0.0:
     find-up "^2.0.0"
     read-pkg "^3.0.0"
 
-read-pkg-up@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/read-pkg-up/-/read-pkg-up-4.0.0.tgz#1b221c6088ba7799601c808f91161c66e58f8978"
-  integrity sha512-6etQSH7nJGsK0RbG/2TeDzZFa8shjQ1um+SwQQ5cwKy0dhSXdOncEhb1CPpvQG4h7FyOV6EB6YlV0yJvZQNAkA==
+read-pkg-up@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/read-pkg-up/-/read-pkg-up-5.0.0.tgz#b6a6741cb144ed3610554f40162aa07a6db621b8"
+  integrity sha512-XBQjqOBtTzyol2CpsQOw8LHV0XbDZVG7xMMjmXAJomlVY03WOBRmYgDJETlvcg0H63AJvPRwT7GFi5rvOzUOKg==
   dependencies:
     find-up "^3.0.0"
-    read-pkg "^3.0.0"
+    read-pkg "^5.0.0"
 
 read-pkg@^3.0.0:
   version "3.0.0"
@@ -4316,10 +4316,10 @@ safe-regex@^1.1.0:
   resolved "https://registry.yarnpkg.com/safer-buffer/-/safer-buffer-2.1.2.tgz#44fa161b0187b9549dd84bb91802f9bd8385cd6a"
   integrity sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==
 
-semantic-release@15.13.7:
-  version "15.13.7"
-  resolved "https://registry.yarnpkg.com/semantic-release/-/semantic-release-15.13.7.tgz#fd5535efcb4d4cb7b339df5f999da76915b67788"
-  integrity sha512-5O+MulYrnjNOs3F0y5XQoyWqURGsR1w7R5sa/zOktsFHeJ0g1Cb2O4CIpKzkeBxVWXuPXhIuKrAw3dhHbE/gLQ==
+semantic-release@15.13.8:
+  version "15.13.8"
+  resolved "https://registry.yarnpkg.com/semantic-release/-/semantic-release-15.13.8.tgz#3dcfa205b09b82b965fa5f1768d722d938d4b3ac"
+  integrity sha512-92c5Kfz+qfMIE4gAxhzUg/LY1uoW4R4fSsMqNpXx8YNpYsrTL+bY0AI1zYxPjSKfXO22Ld55jjPja62Dl5KgCg==
   dependencies:
     "@semantic-release/commit-analyzer" "^6.1.0"
     "@semantic-release/error" "^2.2.0"
@@ -4342,7 +4342,7 @@ semantic-release@15.13.7:
     marked-terminal "^3.2.0"
     p-locate "^4.0.0"
     p-reduce "^2.0.0"
-    read-pkg-up "^4.0.0"
+    read-pkg-up "^5.0.0"
     resolve-from "^4.0.0"
     semver "^5.4.1"
     signale "^1.2.1"
