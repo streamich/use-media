@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/streamich/use-media/compare/v1.3.0...v1.4.0) (2019-05-04)
+
+### Features
+
+* Default value is now determined with the same logic as later calculated values. User-
+supplied default values are now unnecessary and ignored.
+
 # [1.3.0](https://github.com/streamich/use-media/compare/v1.2.0...v1.3.0) (2019-03-13)
 
 

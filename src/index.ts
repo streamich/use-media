@@ -26,11 +26,9 @@ const objectToString = (query: string | MediaQueryObject) => {
 
 type Effect = (effect: EffectCallback, deps?: DependencyList) => void;
 const createUseMedia = (effect: Effect) => (
-  rawQuery: string | MediaQueryObject,
-  defaultState: boolean = false
-) => {
-  const [state, setState] = useState(defaultState);
+  rawQuery: string | MediaQueryObject) => {
   const query = objectToString(rawQuery);
+  const [state, setState] = useState(() => !!window.matchMedia(query).matches);
   effect(() => {
     let mounted = true;
     const mql = window.matchMedia(query);
