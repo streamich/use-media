@@ -26,10 +26,10 @@
   "dependencies": {},
   "devDependencies": {
     "@semantic-release/changelog": "3.0.4",
-    "@semantic-release/git": "7.0.12",
-    "@semantic-release/npm": "5.1.9",
+    "@semantic-release/git": "7.0.13",
+    "@semantic-release/npm": "5.1.11",
     "@types/react": "16.8.22",
-    "semantic-release": "15.13.16",
+    "semantic-release": "15.13.17",
     "typescript": "3.5.2"
   },
   "peerDependencies": {
