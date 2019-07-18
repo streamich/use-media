@@ -1,5 +1,5 @@
-import { DependencyList, EffectCallback } from "react";
-import * as React from "react";
+import { DependencyList, EffectCallback } from 'react';
+import * as React from 'react';
 
 const { useState, useEffect, useLayoutEffect } = React;
 
@@ -9,7 +9,7 @@ const camelToHyphen = (str: string) =>
   str.replace(/[A-Z]/g, m => `-${m.toLowerCase()}`).toLowerCase();
 
 const noWindowMatches: MediaQueryList = {
-  media: "",
+  media: '',
   addListener: noop,
   removeListener: noop,
   matches: false,
@@ -20,19 +20,19 @@ const noWindowMatches: MediaQueryList = {
 };
 
 const objectToString = (query: string | MediaQueryObject) => {
-  if (typeof query === "string") return query;
+  if (typeof query === 'string') return query;
   return Object.entries(query)
     .map(([feature, value]) => {
       feature = camelToHyphen(feature);
-      if (typeof value === "boolean") {
+      if (typeof value === 'boolean') {
         return value ? feature : `not ${feature}`;
       }
-      if (typeof value === "number" && /[height|width]$/.test(feature)) {
+      if (typeof value === 'number' && /[height|width]$/.test(feature)) {
         value = `${value}px`;
       }
       return `(${feature}: ${value})`;
     })
-    .join(" and ");
+    .join(' and ');
 };
 
 type Effect = (effect: EffectCallback, deps?: DependencyList) => void;
@@ -45,7 +45,7 @@ const createUseMedia = (effect: Effect) => (
   effect(() => {
     let mounted = true;
     const mql =
-      typeof window === "undefined"
+      typeof window === 'undefined'
         ? noWindowMatches
         : window.matchMedia(query);
     const onChange = () => {
