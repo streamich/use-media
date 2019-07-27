@@ -8,6 +8,17 @@ type MediaQueryObject = { [key: string]: string | number | boolean };
 const camelToHyphen = (str: string) =>
   str.replace(/[A-Z]/g, m => `-${m.toLowerCase()}`).toLowerCase();
 
+const noWindowMatches: MediaQueryList = {
+  media: '',
+  addListener: noop,
+  removeListener: noop,
+  matches: false,
+  onchange: noop,
+  addEventListener: noop,
+  removeEventListener: noop,
+  dispatchEvent: (_: Event) => true
+};
+
 const objectToString = (query: string | MediaQueryObject) => {
   if (typeof query === 'string') return query;
   return Object.entries(query)
@@ -33,7 +44,10 @@ const createUseMedia = (effect: Effect) => (
   const query = objectToString(rawQuery);
   effect(() => {
     let mounted = true;
-    const mql = window.matchMedia(query);
+    const mql =
+      typeof window === 'undefined'
+        ? noWindowMatches
+        : window.matchMedia(query);
     const onChange = () => {
       if (!mounted) return;
       setState(!!mql.matches);
@@ -51,6 +65,7 @@ const createUseMedia = (effect: Effect) => (
   return state;
 };
 
+function noop() {}
 
 export const useMedia = createUseMedia(useEffect);
 export const useMediaLayout = createUseMedia(useLayoutEffect);
