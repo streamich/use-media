@@ -80,8 +80,8 @@ export function jestMockMatchMedia({media, matches = false}: MockMatchMedia) {
 
 ```jsx
 const mediaQueries = {
-  prefersReducedMotion: '(prefers-reduced-motion: reduce)',
   mobile: '(max-width: 767px)',
+  prefersReducedMotion: '(prefers-reduced-motion: reduce)',
 };
 
 describe('<MyComponent />', () => {
@@ -127,9 +127,8 @@ interface Props {
 export const MediaQueryContext = createContext(null);
 
 const mediaQueries = {
-  prefersReducedMotion: '(prefers-reduced-motion: reduce)',
   mobile: '(max-width: 767px)',
-  desktop: '(min-width: 768px)',
+  prefersReducedMotion: '(prefers-reduced-motion: reduce)',
 };
 
 export default function MediaQueryProvider({children}: Props) {
@@ -157,13 +156,14 @@ export function useMediaQueryContext() {
 ```jsx
 import React from 'react';
 import MediaQueryProvider from '../MediaQueryProvider';
+import MyComponent from '../MyComponent';
 
 export default function App() {
   return (
     <MediaQueryProvider>
-      <MyApp>
+      <div id="MyApp">
         <MyComponent />
-      </MyApp>
+      </div>
     </MediaQueryProvider>
   );
 }
