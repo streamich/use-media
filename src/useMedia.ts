@@ -47,7 +47,7 @@ const createUseMedia = (effect: Effect) => (
   return state;
 };
 
-const useMedia = createUseMedia(useEffect);
+export const useMedia = createUseMedia(useEffect);
 export const useMediaLayout = createUseMedia(useLayoutEffect);
 
 export default useMedia;

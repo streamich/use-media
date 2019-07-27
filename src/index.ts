@@ -1,2 +1,1 @@
-export {default, useMediaLayout, mockMediaQueryList} from './useMedia';
-export {Effect, MediaQueryObject} from './types';
+export {default, useMedia, useMediaLayout} from './useMedia';
