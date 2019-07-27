@@ -1,3 +1,10 @@
+## [1.3.1](https://github.com/streamich/use-media/compare/v1.3.0...v1.3.1) (2019-07-27)
+
+
+### Bug Fixes
+
+* make useMedia work on server ([2349f0c](https://github.com/streamich/use-media/commit/2349f0c))
+
 # [1.3.0](https://github.com/streamich/use-media/compare/v1.2.0...v1.3.0) (2019-03-13)
 
 
