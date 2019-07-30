@@ -29,7 +29,7 @@
     "@semantic-release/git": "7.0.16",
     "@semantic-release/npm": "5.1.13",
     "@types/react": "16.8.23",
-    "semantic-release": "15.13.18",
+    "semantic-release": "15.13.19",
     "typescript": "3.5.3"
   },
   "peerDependencies": {
