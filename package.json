@@ -30,7 +30,7 @@
     "@semantic-release/npm": "5.1.15",
     "@types/react": "16.9.2",
     "semantic-release": "15.13.24",
-    "typescript": "3.5.3"
+    "typescript": "3.6.2"
   },
   "peerDependencies": {
     "react": "^16.8.1"
