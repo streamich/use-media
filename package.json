@@ -28,7 +28,7 @@
     "@semantic-release/changelog": "3.0.4",
     "@semantic-release/git": "7.0.16",
     "@semantic-release/npm": "5.2.0",
-    "@types/react": "16.9.9",
+    "@types/react": "16.9.10",
     "semantic-release": "15.13.27",
     "typescript": "3.6.4"
   },
