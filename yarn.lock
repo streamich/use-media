@@ -133,10 +133,10 @@
     parse-github-url "^1.0.1"
     url-join "^4.0.0"
 
-"@semantic-release/npm@5.3.2":
-  version "5.3.2"
-  resolved "https://registry.yarnpkg.com/@semantic-release/npm/-/npm-5.3.2.tgz#87b24f7a6e441b7c75fa4e5158bdce694f06986b"
-  integrity sha512-4uE4pYvf5XEWqJPTLCrrmp5zu9XnnLqDjsn+2yrpMICNCpTq3M5g9OD7hwQoolg5v373t2ZnNgdcjsz+lqU0aA==
+"@semantic-release/npm@5.3.3":
+  version "5.3.3"
+  resolved "https://registry.yarnpkg.com/@semantic-release/npm/-/npm-5.3.3.tgz#8b92e915ec51820e8c91a7179ab4e825b0795b04"
+  integrity sha512-9UhVIri3yZzgzPO9Vcbyg4EZuCVDgR3UC+f4iOb62tRSLBGflY1oRdNpoyonIayOec0JyRzvfapiXm1Bu111og==
   dependencies:
     "@semantic-release/error" "^2.2.0"
     aggregate-error "^3.0.0"
