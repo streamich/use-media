@@ -13,7 +13,7 @@ import useMedia from 'use-media';
 
 const Demo = () => {
   // Accepts an object of features to test
-  const isWide = useMedia({minWidth: 1000});
+  const isWide = useMedia({minWidth: '1000px'});
   // Or a regular media query string
   const reduceMotion = useMedia('(prefers-reduced-motion: reduce)');
 
@@ -32,7 +32,7 @@ import {useMediaLayout} from 'use-media';
 
 const Demo = () => {
   // Accepts an object of features to test
-  const isWide = useMediaLayout({minWidth: 1000});
+  const isWide = useMediaLayout({minWidth: '1000px'});
   // Or a regular media query string
   const reduceMotion = useMediaLayout('(prefers-reduced-motion: reduce)');
 
