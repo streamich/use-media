@@ -2,6 +2,19 @@
 
 `useMedia` React sensor hook that tracks state of a CSS media query.
 
+## Install
+
+You can install `use-media` with npm
+
+```bash
+npm install --save use-media
+```
+
+or with yarn
+```bash
+yarn add use-media
+```
+
 ## Usage
 
 With `useEffect`
