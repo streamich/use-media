@@ -1,3 +1,16 @@
+# [1.5.0](https://github.com/streamich/use-media/compare/v1.4.0...v1.5.0) (2023-12-01)
+
+
+### Bug Fixes
+
+* 🐛 setup .github folder ([03bea64](https://github.com/streamich/use-media/commit/03bea64e794e26a4e72aad515c2bc27128c09d65))
+* correct peer dependencies ([d094f4f](https://github.com/streamich/use-media/commit/d094f4f40c2cdbaee8d1bed8b5d7893a098da555))
+
+
+### Features
+
+* support React 18 ([32e5e06](https://github.com/streamich/use-media/commit/32e5e067755266af914a6aaff8d6cb2e9ba6033f))
+
 # [1.4.0](https://github.com/streamich/use-media/compare/v1.3.1...v1.4.0) (2019-07-27)
 
 
