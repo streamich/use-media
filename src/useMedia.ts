@@ -15,7 +15,7 @@ export const mockMediaQueryList: MediaQueryList = {
 
 const createUseMedia = (effect: Effect) => (
   rawQuery: string | MediaQueryObject,
-  defaultState = false,
+  defaultState: boolean | (() => boolean) = false,
 ) => {
   const [state, setState] = useState(defaultState);
   const query = queryObjectToString(rawQuery);
