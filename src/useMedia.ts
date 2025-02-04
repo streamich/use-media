@@ -1,3 +1,5 @@
+'use client';
+
 import {useState, useEffect, useLayoutEffect} from 'react';
 import {queryObjectToString, noop} from './utilities';
 import {Effect, MediaQueryObject} from './types';
